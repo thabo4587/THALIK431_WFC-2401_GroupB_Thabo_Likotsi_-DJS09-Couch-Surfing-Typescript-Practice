@@ -139,7 +139,6 @@ The utility functions are used to perform various operations, such as displaying
 
 #### Function 1: showReviewTotal
 
-```
 - **Purpose**: Displays the total number of reviews and the name of the last reviewer.
 - **Parameters**:
   - `value`: The total number of reviews.
