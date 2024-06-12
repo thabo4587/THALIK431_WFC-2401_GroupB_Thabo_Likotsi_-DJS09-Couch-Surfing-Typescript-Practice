@@ -12,6 +12,8 @@ open index.html
 
 ## Rough Loom Videos(there was noise on campus I will record another one tonight):https://www.loom.com/share/b8b13d3367e14dbbbacf1bc4a6216bac?sid=6ef7c1ba-5c8c-405c-9bff-756541207e6d
 
+## Continuation : https://www.loom.com/share/0e052b1809684fbfa23ffa995091852e?sid=96882bde-8afa-4f38-9abb-6063fc7804ff
+
 This project is a TypeScript-based application designed to manage property listings and user reviews. It demonstrates various TypeScript features, including enums, interfaces, and classes, along with DOM manipulation and event handling in a web environment. The primary goal of this application is to display property listings, manage user reviews, and handle user permissions and loyalty levels effectively. This documentation will provide an in-depth explanation of the code, including how each part of the code functions and how it contributes to the overall application.
 
 ## Table of Contents
@@ -44,32 +46,15 @@ To set up this project locally, follow these steps:
 
 This will install all the necessary dependencies required for the project to run. Make sure you have Node.js and npm installed on your system before proceeding with the installation.
 
-## Project Structure
+## Types file
+The project contains a type file with values that are fixed. 
 
-The project is organized into several directories and files to keep the code modular and maintainable. Here is an overview of the project structure:
-
+```typescript
+export type Price = 25 | 30 | 35 | 45
+export type Country = 'Colombia' | 'Poland' | 'United Kingdom' | 'Malaysia'
 ```
-/src
-  /enums
-    - permissions.ts
-    - loyaltyUser.ts
-  /interfaces
-    - review.ts
-    - property.ts
-  /utils
-    - functions.ts
-  - index.ts
-  - styles.css
-  - index.html
-```
+In this code snippet Price and Country can only accept the values outlines in the type definition.If any other values is assigned it throws an error.
 
-- **/src**: This is the root directory for the source code.
-- **/enums**: This directory contains TypeScript enum definitions.
-- **/interfaces**: This directory contains TypeScript interface definitions.
-- **/utils**: This directory contains utility helper functions.
-- **index.ts**: The main TypeScript file that initializes and runs the application.
-- **styles.css**: The CSS file for styling the application.
-- **index.html**: The main HTML file that serves as the entry point for the application.
 
 ## Modules
 
@@ -120,7 +105,7 @@ Interfaces in TypeScript define the structure of an object, ensuring that the ob
 export interface Property {
     image: string;
     title: string;
-    price: Price;
+    price: Price; //accessed the type Price with fixed values
     location: {
         firstLine: string;
         city: string;
@@ -137,7 +122,7 @@ The `Property` interface ensures that all property objects have a consistent str
 
 ### Functions
 
-The utility functions are used to perform various operations, such as displaying review totals, populating user information, showing property details, and sorting reviews in this project.
+The utility functions in the utility function file are used to perform various operations, such as displaying review totals, populating user information, showing property details, and sorting reviews in this project.
 
 #### Function 1: showReviewTotal
 
