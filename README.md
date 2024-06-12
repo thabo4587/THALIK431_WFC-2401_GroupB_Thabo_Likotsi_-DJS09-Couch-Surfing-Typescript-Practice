@@ -10,6 +10,8 @@ open index.html
 
 ## Overview
 
+## Rough Loom Videos(there was noise on campus I will record another one tonight):https://www.loom.com/share/b8b13d3367e14dbbbacf1bc4a6216bac?sid=6ef7c1ba-5c8c-405c-9bff-756541207e6d
+
 This project is a TypeScript-based application designed to manage property listings and user reviews. It demonstrates various TypeScript features, including enums, interfaces, and classes, along with DOM manipulation and event handling in a web environment. The primary goal of this application is to display property listings, manage user reviews, and handle user permissions and loyalty levels effectively. This documentation will provide an in-depth explanation of the code, including how each part of the code functions and how it contributes to the overall application.
 
 ## Table of Contents
